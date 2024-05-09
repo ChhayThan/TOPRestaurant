@@ -2,6 +2,10 @@ import "./style.css";
 import generateLandingPage from "./landingPage.js";
 import generateMenuPage from "./menuPage.js";
 import generateAboutPage from "./aboutPage.js";
+import sushi from "../assets/images/sushi.png";
+
+const logoImg = document.querySelector("#logo_img");
+logoImg.src = sushi;
 
 const homeBtn = document.querySelector(".home");
 const menuBtn = document.querySelector(".menu");
