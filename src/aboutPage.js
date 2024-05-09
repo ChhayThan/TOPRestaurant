@@ -16,6 +16,7 @@ function generateAboutPage() {
   h3message.innerHTML = "THIS IS <span>寿司屋</span>!";
 
   aboutHeading.appendChild(h1message);
+  console.log(h1message);
   aboutHeading.appendChild(h3message);
 
   landingMessage.appendChild(aboutHeading);
@@ -31,8 +32,9 @@ function generateAboutPage() {
 
   const contactUs = document.createElement("div");
   contactUs.classList.add("contactus");
-  h1message.innerText = "Get in Contact With Us!";
-  contactUs.appendChild(h1message);
+  const catTitle = document.createElement("h1");
+  catTitle.innerText = "Get in Contact With Us!";
+  contactUs.appendChild(catTitle);
   const catPicture = new Image(300);
   catPicture.src = sushi_cat;
   contactUs.appendChild(catPicture);
