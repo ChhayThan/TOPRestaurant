@@ -1,7 +1,6 @@
 import avocado_Uranmaki from "../assets/images/Avocado_Uramaki.png";
 import salmon_Temaki from "../assets/images/Salmon_Temaki.png";
 import sashimi_slices from "../assets/images/sashimi_slices.png";
-
 function generateMenuPage() {
   const content = document.querySelector("#content");
 

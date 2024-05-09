@@ -13,23 +13,27 @@ function clearContent() {
     content.removeChild(content.lastChild);
   }
 }
-
 generateLandingPage();
+tabListener();
 
-const toMenuPage = document.querySelectorAll(".menu");
-toMenuPage.forEach((item) => {
-  item.addEventListener("click", () => {
-    console.log("IT WORKS");
-    clearContent();
-    generateMenuPage();
+function tabListener() {
+  const menuPageListener = document.querySelectorAll(".menu");
+  menuPageListener.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log("IT WORKS");
+      clearContent();
+      generateMenuPage();
+      tabListener();
+    });
   });
-});
 
-const toHomePage = document.querySelectorAll(".home");
-toHomePage.forEach((item) => {
-  item.addEventListener("click", () => {
-    console.log("IT WORKS");
-    clearContent();
-    generateLandingPage();
+  const homePageListener = document.querySelectorAll(".home");
+  homePageListener.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log("IT WORKS");
+      clearContent();
+      generateLandingPage();
+      tabListener();
+    });
   });
-});
+}
