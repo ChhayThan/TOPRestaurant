@@ -1,6 +1,9 @@
 import avocado_Uranmaki from "../assets/images/Avocado_Uramaki.png";
 import salmon_Temaki from "../assets/images/Salmon_Temaki.png";
 import sashimi_slices from "../assets/images/sashimi_slices.png";
+import textured_Gyoza from "../assets/images/Textured_Gyoza.png";
+import okonomiyaki from "../assets/images/Okonomiyaki.png";
+
 function generateMenuPage() {
   const content = document.querySelector("#content");
 
@@ -36,9 +39,20 @@ function generateMenuPage() {
     true
   );
 
+  const item4 = generateItem(textured_Gyoza, "Textured Gyoza", "12.95", true);
+
+  const item5 = generateItem(
+    okonomiyaki,
+    "Tradtional Okonomiyaki",
+    "16.95",
+    true
+  );
+
   content.appendChild(item1);
   content.appendChild(item2);
   content.appendChild(item3);
+  content.appendChild(item4);
+  content.appendChild(item5);
 }
 
 function generateItem(image, title, price, button) {

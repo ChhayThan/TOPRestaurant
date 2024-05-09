@@ -1,6 +1,7 @@
 import "./style.css";
 import generateLandingPage from "./landingPage.js";
 import generateMenuPage from "./menuPage.js";
+import generateAboutPage from "./aboutPage.js";
 
 const homeBtn = document.querySelector(".home");
 const menuBtn = document.querySelector(".menu");
@@ -33,6 +34,15 @@ function tabListener() {
       console.log("IT WORKS");
       clearContent();
       generateLandingPage();
+      tabListener();
+    });
+  });
+  const aboutPageListener = document.querySelectorAll(".about");
+  aboutPageListener.forEach((item) => {
+    item.addEventListener("click", () => {
+      console.log("IT WORKS");
+      clearContent();
+      generateAboutPage();
       tabListener();
     });
   });
