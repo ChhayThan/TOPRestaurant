@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "gh-page": "git subtree push --prefix dist origin gh0pages"
+    "gh-page": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
