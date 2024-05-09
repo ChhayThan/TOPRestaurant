@@ -14,8 +14,8 @@ function clearContent() {
     content.removeChild(content.lastChild);
   }
 }
-generateLandingPage();
-tabListener();
+// generateLandingPage();
+// tabListener();
 
 function tabListener() {
   const menuPageListener = document.querySelectorAll(".menu");
